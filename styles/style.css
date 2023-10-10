@@ -1,0 +1,276 @@
+:root {
+    --main-color: #755c3b;
+}
+
+html {
+    height: 100%;
+    font-family: sans-serif;
+    color: rgb(245, 245, 245)
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 100px 200px;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    padding: 7px 50px;
+}
+
+#logo {
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+}
+
+main {
+    background-color: rgba(68, 66, 61, 150);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+ul {
+    position: relative;
+    top: 40%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.explore {
+    position: relative;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.explore h2 {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    display: block;
+    color: black;
+    margin: 0;
+}
+
+.explore ul .element {
+    display: inline-block;
+}
+
+.drop-menu {
+    display: none;
+    background-color: #363532;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.drop-menu:hover {
+    display: block;
+}
+
+.element {
+    position: relative;
+    text-shadow: 1px 1px 2px black;
+}
+
+.drop-menu a {
+    display: block;
+    padding: 10px;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+.drop-menu a:hover {
+    background-color: rgba(68, 66, 61, 100);
+    border-radius: 5px;
+}
+
+.drop-menu li {
+    display: block;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.element:hover span + .drop-menu {
+    display: block;
+}
+
+.element:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.element span {
+    padding: 15px 10px;
+}
+
+.element::after {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("img/down.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: "";
+}
+
+.element:hover::after {
+    background-image: url("img/up.png");
+}
+
+.info { 
+    width: 30%;
+    position: relative;
+    float: right;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.info-title {
+    display: block;
+    background-color: var(--main-color);
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    line-height: 50px; 
+    box-sizing: border-box;
+}
+
+.image {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.container ul {
+    background-color: var(--main-color);
+}
+
+.container ul h3 {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.container li {
+    border: 1px solid var(--main-color);
+    background-color: #13110e;
+    padding: 0 10px;
+}
+
+.container li p, h4 {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.container li h4 {
+    display: inline-block;
+    width: 100px;
+}
+
+.title {
+    padding: 10px;
+    border-bottom: 2px solid white;
+    overflow: auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #282624;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer h2 {
+    display: block;
+    margin: 0;
+    padding: 25px 20px;
+}
+
+footer li {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    border-radius: 25px;
+    margin-left: 150px;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+footer li:hover {
+    position: relative;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+footer img {
+    position: relative;
+    top: 10%;
+    width: 33%;
+}
+
+.steam {
+    background: linear-gradient(45deg, black, #252850);
+}
+
+.discord {
+    background: linear-gradient(45deg, black, #444fb9);
+}
+
+.vk {
+    background: linear-gradient(45deg, black, #0077ff);
+}
+
+.content {
+    display: block;
+    padding: 10px;
+}
+
+.content img {
+    width: 10%;
+    position: relative;
+    left: 29%;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content video {
+    display: block;
+    width: 55%;
+    position: relative;
+    left: 7%;
+    border: 4px solid var(--main-color);
+    border-radius: 10px;
+}
